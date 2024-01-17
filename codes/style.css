@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+html, body {
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/**header***/
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    margin: 0 50px 50px 30px ;
+}
+    .container {
+        margin: 0 50px 20px 20px;
+    }
+        #logo{
+            width: 160px;
+            margin-block: 10px;
+        }
+        nav {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+            nav a{
+                margin-left: 20px;
+                padding: 10px;
+                font-weight: 600;
+            }
+            nav a:hover{
+            color: blueviolet;
+            font-weight: 800;
+            font-size: 18px;
+            }
+/**fin header***/
+/**début carroussel***/
+#banner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	min-height: 300px;
+	position: relative;
+}
+    .banner-img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        object-fit: cover;
+        object-position: center;
+    }
+    #banner p {
+        font-family: 'Roboto Slab', sans-serif;
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 66px;
+        color: white;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        text-align: center;
+    }
+
+    /**flèche carroussel***/
+    #banner .arrow {
+        position: absolute;
+    }
+    #banner .arrow_left {
+        left: 10px;
+    }
+    #banner .arrow_right {
+        right: 10px;
+    }/**fin flèche carroussel***/
+        /**images carroussel***/
+        .banner-img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            object-fit: cover;
+            object-position: center;
+        }/**fin image carroussel***/
+        /**point carroussel***/
+        .dots {
+            position: absolute;
+            bottom: 40px;
+            display: flex;
+        }
+        .dot {
+            margin-inline: 5px;
+            width: 13px;
+            height: 13px;
+            background-color: #ffffff00;
+            border: 3px solid #fff;
+            border-radius: 100%;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        .dot_selected {
+            background-color: #fff;
+        }/** fin point carroussel***/ 
+/**fin carroussel***/
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+    h1{
+        display: flex;
+        margin-top: 60px;
+        margin-bottom: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    .presentation-du-site{
+        margin-bottom: 50px;
+        font-size: 20px;
+        text-align: center;
+    }
+/** les oeuvres***/ 
+#liste-oeuvres, .annee {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.annee h2 {
+
+}
+
+    .oeuvre {
+        width: 30%;
+        padding: 15px;
+    }
+
+.oeuvre img {
+    width: 100%;
+}
+
+.oeuvre h2, #detail-oeuvre h1 {
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.oeuvre .description, #detail-oeuvre .description {
+    font-style: italic;
+    margin-top: 0;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+#detail-oeuvre {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    margin-bottom: 100px;
+    margin-top: 75px;
+    font-size: 14px;
+    padding: 0 15px;
+}
+
+#img-oeuvre {
+    margin-right: 25px;
+}
+
+#img-oeuvre img {
+    max-width: 470px;
+    margin: auto;
+    display: block;
+}
+
+#contenu-oeuvre {
+    max-width: 470px;
+}
+/**footer***/
+footer {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: rgb(70, 69, 133);
+}
+    footer div{
+        background-color: rgb(166, 166, 230);
+        width: 100%;
+        min-height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer div a{
+        display: flex;
+        margin-left: 30px;
+        margin-right: 30px;
+        font-size: 20px;
+    }
+    footer div a:hover{
+        color: #ff5405;
+        font-weight: 700;
+    }
+
+/**fin footer***/
+@media (max-width: 850px) {
+    .oeuvre {
+        width: 50%;
+    }
+
+    #img-oeuvre {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    #img-oeuvre img {
+        width: 100%;
+    }
+
+    #contenu-oeuvre {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .oeuvre {
+        width: 100%;
+    }
+
+    #logo {
+        width: 200px;
+    }
+}
