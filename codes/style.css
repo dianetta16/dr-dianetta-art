@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap');
-
 html, body {
     margin: 0;
 }
@@ -157,7 +156,9 @@ main {
         width: 100%;
     }
 
-
+    .divLinearGradientBackground{
+        background: linear-gradient(to right, #eec895, #f5a6a6); 
+    }
 
 /** page des oeuvres***/
 .oeuvre h2, #detail-oeuvre h1 {
