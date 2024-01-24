@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap');
-:root {
-    --first-color: #eec895;
-    --second-color: #f5a6a6;
-}
+
 html, body {
     margin: 0;
 }
@@ -159,9 +156,7 @@ main {
     .oeuvre img {
         width: 100%;
     }
-.divLinearGradientBackground{
-    background: linear-gradient(to right, var(--first-color), var(--second-color));
-}
+
 
 
 /** page des oeuvres***/
