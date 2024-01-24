@@ -68,20 +68,14 @@ document.querySelector("#banner .arrow_left").addEventListener('click', function
 	dotArray[indexslide].classList.add("dot_selected");
 })
 
-
-for (var i = 0; i < slides.length-1; i++) { 
-	
+//boucle avec la longueur du tableau*/
+for (var i = 0; i < slides.length-1; i++) {
 
 }
 
-
-
-
-
-
-
-
+//*** longueur du tableau*/
 console.log("longueur du tableau :" + slides.length);
+
 
 
 

@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap');
-
+:root {
+    --first-color: #eec895;
+    --second-color: #f5a6a6;
+}
 html, body {
     margin: 0;
 }
@@ -79,7 +82,14 @@ header {
     }
     #banner .arrow_right {
         right: 10px;
-    }/**fin flèche carroussel***/
+    }
+    #banner .arrow_left:hover{
+        cursor: pointer;
+    }
+    #banner .arrow_right:hover{
+        cursor: pointer;
+    }
+    /**fin flèche carroussel***/
         /**images carroussel***/
         .banner-img {
             position: absolute;
@@ -124,25 +134,37 @@ main {
         font-size: 20px;
         text-align: center;
     }
-/** les oeuvres***/ 
-#liste-oeuvres, .annee {
+/** les oeuvres page accueil***/ 
+#liste-oeuvres{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
 }
-.annee h2 {
-
+.creations{
+    color: rgb(255, 0, 21);
+    margin: 50px 400px;
 }
-
+.annee {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;  
+    justify-content: space-evenly;
+}
     .oeuvre {
         width: 30%;
         padding: 15px;
     }
 
-.oeuvre img {
-    width: 100%;
+    .oeuvre img {
+        width: 100%;
+    }
+.divLinearGradientBackground{
+    background: linear-gradient(to right, var(--first-color), var(--second-color));
 }
 
+
+/** page des oeuvres***/
 .oeuvre h2, #detail-oeuvre h1 {
     text-transform: uppercase;
     margin-top: 0;
