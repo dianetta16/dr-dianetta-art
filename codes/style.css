@@ -19,7 +19,7 @@ header {
 	justify-content: space-between;
 	align-items: center;
     padding: 0 50px 10px 30px ;
-    background: linear-gradient(#998cda, #d19fee);
+    background: linear-gradient(#bcb3eb, #e7afe9);
 }
     .container {
         margin: 0 50px 20px 20px;
@@ -41,7 +41,7 @@ header {
                 font-weight: 600;
             }
             nav a:hover{
-            color: blueviolet;
+            color: rgb(147, 3, 190);
             font-weight: 800;
             font-size: 18px;
             }
@@ -146,6 +146,7 @@ main {
 .creations{
     color: rgb(255, 0, 21);
     margin: 50px 400px;
+    font-size: 30px;
 }
 .annee {
     display: flex;
@@ -156,6 +157,9 @@ main {
     .oeuvre {
         width: 30%;
         padding: 15px;
+    }
+    .oeuvre h2{
+        font-size: 25px !important;
     }
 
     .oeuvre img {
@@ -175,7 +179,7 @@ main {
     font-size: 30px;
 }
 
-.oeuvre .description, .date-oeuvre {
+.oeuvre .description{
     font-style: italic;
     margin-top: 0;
     font-size: 12px;
@@ -192,22 +196,37 @@ main {
     margin-top: 75px;
     font-size: 14px;
     padding: 0 15px;
-    background: linear-gradient(to right, #95eeee, #a6aef5);
+    background: linear-gradient(to right, #d3f0f0, #b1b7eb);
 }
-
     #img-oeuvre {
         margin-right: 25px;
     }
-
         #img-oeuvre img {
             max-width: 470px;
             margin: auto;
             display: block;
         }
+            .dimension{
+                font-weight: 700;
+            }
+        #img-autres img{
+            max-width: 100px;
+            max-height: 100px;
+            margin-right: 5px;
+        }
 
     #contenu-oeuvre {
         max-width: 470px;
+        min-height: 400px;
     }
+        .date-oeuvre {
+            font-style: italic;
+            margin-top: 0;
+            font-size: 15px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
         .description-oeuvre{
             font-size: 16px;
         }
@@ -236,7 +255,7 @@ footer {
             color: #ff0505;
             font-weight: 700;
         }
-        footer div .cta {
+        footer div .cta, #detail-presentation .cta {
 			display: inline-block;
 			background: linear-gradient(#7567b8, #c373f1);
             font-size: 16px;
@@ -259,18 +278,26 @@ footer {
 
     #img-dianetta {
         margin-right: 25px;
+        min-height: 550px;
     }
 
         #img-dianetta img {
-            max-width: 470px;
+            max-width: 400px;
             margin: auto;
             display: block;
         }
 
     #contenu-dianetta {
-        max-width: 470px;
+        max-width: 700px;
     }
-
+    .nom, .description-presentation{
+        font-size: 18px;
+        padding-left: 15px;
+    }
+    .pourquoi-le-dessin{
+        display: flex;
+        justify-content: center;
+    }
 
         /**fin footer***/
 @media (max-width: 850px) {
