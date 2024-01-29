@@ -291,7 +291,10 @@ footer {
 			border-radius: 50px;
 			padding: 20px 30px;
 		}
-
+        .instagram-box img{
+            width: 30px;
+            height: 30px;
+        }
 /**page présentation***/
 #detail-presentation {
     display: flex;
@@ -327,9 +330,7 @@ footer {
         display: flex;
         justify-content: center;
     }
-
-        /**fin footer***/
-                /**adapter aus écran jusqu'à 1042px***/
+    /**adapter aus écran jusqu'à 1042px***/
 @media (max-width: 1042px) {
     /**menu de navigation**/
     header {
