@@ -330,6 +330,18 @@ footer {
         display: flex;
         justify-content: center;
     }
+/** page des croquis***/
+.oeuvre-croquis {
+    width: 20%;
+    padding: 15px;
+}
+    .oeuvre-croquis img {
+        width: 100%;
+    }
+    .oeuvre-croquis h2 {
+        font-size: 18px;
+        font-weight: 600;
+    }
     /**adapter aus écran jusqu'à 1042px***/
 @media (max-width: 1042px) {
     /**menu de navigation**/
