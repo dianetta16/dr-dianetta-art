@@ -382,6 +382,15 @@ footer {
     #img-dianetta {
         min-height: 0;
     }
+    /** page des croquis***/
+    .oeuvre-croquis {
+        width: 30%;
+        padding: 15px;
+    }
+        .oeuvre-croquis h2 {
+            font-size: 16px;
+            font-weight: 600;
+        }
 }
                 /**adapter aus écran jusqu'à 770px***/
 @media (max-width: 770px) {
@@ -466,7 +475,22 @@ footer {
     footer div {
         flex-direction: column;
     }
-
+     /** page des croquis***/
+     .h1-croquis{
+        max-width: 80%;
+        margin-left: 60px;
+        font-size: 20px;
+     }
+        .presentation-croquis {
+            margin-left: 10px;
+        }
+        .oeuvre-croquis {
+            width: 45%;
+            padding: 15px;
+        }
+            .oeuvre-croquis h2 {
+                font-size: 13px;
+            }
 }
 
                 /**adapter aus écran jusqu'à 500px***/
@@ -546,5 +570,17 @@ footer {
     }
       
 }
-
+                /**adapter aus écran jusqu'à 450px***/
+@media (max-width: 450px) {
+    /** page des croquis***/
+    .h1-croquis{
+        font-size: 15px;
+     }
+     .presentation-croquis {
+        font-size: 14px;
+    }
+        .oeuvre-croquis h2 {
+            font-size: 14px;
+        }
+}
 
