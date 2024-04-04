@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+html, body {
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+h1 {
+font-size: 30px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/**header***/
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    padding: 0 50px 10px 30px ;
+    background: linear-gradient(#bcb3eb, #e7afe9);
+}
+    .container {
+        margin: 0 50px 20px 20px;
+    }
+        #logo{
+            width: 160px;
+            margin-block: 10px;
+            border-radius: 10px;
+        }
+        nav {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+            nav a{
+                margin-left: 20px;
+                padding: 10px;
+                font-weight: 600;
+            }
+            nav a:hover{
+            color: rgb(147, 3, 190);
+            font-weight: 800;
+            font-size: 18px;
+            }
+/**fin header***/
+/**début carroussel***/
+#banner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	min-height: 300px;
+	position: relative;
+    margin-top: 20px;
+}
+    .banner-img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        object-fit: cover;
+        object-position: center;
+    }
+    #banner p {
+        font-family: 'Roboto Slab', sans-serif;
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 66px;
+        color: white;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        text-align: center;
+    }
+
+    /**flèche carroussel***/
+    #banner .arrow {
+        position: absolute;
+    }
+    #banner .arrow_left {
+        left: 10px;
+    }
+    #banner .arrow_right {
+        right: 10px;
+    }
+    #banner .arrow_left:hover{
+        cursor: pointer;
+    }
+    #banner .arrow_right:hover{
+        cursor: pointer;
+    }
+    /**fin flèche carroussel***/
+        /**images carroussel***/
+        .banner-img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            object-fit: cover;
+            object-position: center;
+        }/**fin image carroussel***/
+        /**point carroussel***/
+        .dots {
+            position: absolute;
+            bottom: 40px;
+            display: flex;
+        }
+        .dot {
+            margin-inline: 5px;
+            width: 13px;
+            height: 13px;
+            background-color: #ffffff00;
+            border: 3px solid #fff;
+            border-radius: 100%;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        .dot_selected {
+            background-color: #fff;
+        }/** fin point carroussel***/ 
+/**fin carroussel***/
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+    h1{
+        display: flex;
+        margin-top: 60px;
+        margin-bottom: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    .presentation-du-site{
+        margin-bottom: 50px;
+        font-size: 20px;
+        text-align: center;
+    }
+    /**page des videos***/
+#video-box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    font-size: 14px;
+    padding: 0 15px;
+    background: linear-gradient(to right, #baf3f3, #a5d39c);   
+} 
+    #video-concours {
+        margin-right: 25px;
+        margin-left: 30px;
+        max-width: 40%;
+        max-height: 500px;
+    }
+    #video-concours-acceuil {
+        margin-right: 25px;
+        margin-left: 30px;
+        max-width: 70%;
+        max-height: 500px;
+    }
+    #contenu-box-video {
+        max-width: 500px;
+        min-height: 400px;
+    }
+    
+/** les oeuvres page accueil***/ 
+#liste-oeuvres{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.creations{
+    color: rgb(255, 0, 21);
+    margin: 50px 400px;
+    font-size: 30px;
+}
+.annee {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;  
+    justify-content: space-evenly;
+}
+    .oeuvre {
+        width: 30%;
+        padding: 15px;
+    }
+    .oeuvre h2{
+        font-size: 25px !important;
+    }
+
+    .oeuvre img {
+        width: 100%;
+    }
+
+    .divLinearGradientBackground{
+        background: linear-gradient(to right, #eec895, #f5a6a6); 
+    }
+
+/** page des oeuvres***/
+.oeuvre h2, #detail-oeuvre h1 {
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.oeuvre .description{
+    font-style: italic;
+    margin-top: 0;
+    font-size: 12px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+#detail-oeuvre {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-top: 75px;
+    font-size: 14px;
+    padding: 0 15px;
+    background: linear-gradient(to right, #d3f0f0, #b1b7eb);
+}
+    #img-oeuvre {
+        margin-right: 25px;
+    }
+        #img-oeuvre img {
+            max-width: 470px;
+            margin: auto;
+            display: block;
+        }
+            .dimension{
+                font-weight: 700;
+            }
+        #img-autres img{
+            max-width: 100px;
+            max-height: 100px;
+            margin-right: 5px;
+        }
+
+    #contenu-oeuvre {
+        max-width: 500px;
+        min-height: 400px;
+    }
+        .date-oeuvre {
+            font-style: italic;
+            margin-top: 0;
+            font-size: 15px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        .description-oeuvre{
+            font-size: 16px;
+        }
+/**footer***/
+footer {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: rgb(70, 69, 133);
+}
+    footer div{
+        background-color: rgb(166, 166, 230);
+        width: 100%;
+        min-height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        footer div a{
+            display: flex;
+            margin-left: 30px;
+            margin-right: 30px;
+            font-size: 20px;
+        }
+        footer div a:hover{
+            color: #ff0505;
+            font-weight: 700;
+        }
+        footer div .cta, #detail-presentation .cta {
+			display: inline-block;
+			background: linear-gradient(#7567b8, #c373f1);
+            font-size: 16px;
+			border-radius: 50px;
+			padding: 20px 30px;
+		}
+        .instagram-box img{
+            width: 30px;
+            height: 30px;
+        }
+/**page présentation***/
+#detail-presentation {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-top: 75px;
+    font-size: 14px;
+    padding: 0 15px;
+    background: linear-gradient(to right, #95eeee, #a6aef5);
+}
+
+    #img-dianetta {
+        margin-right: 25px;
+        min-height: 550px;
+    }
+
+        #img-dianetta img {
+            max-width: 400px;
+            margin: auto;
+            display: block;
+        }
+
+    #contenu-dianetta {
+        max-width: 700px;
+    }
+    .nom, .description-presentation{
+        font-size: 18px;
+        padding-left: 15px;
+    }
+    .pourquoi-le-dessin{
+        display: flex;
+        justify-content: center;
+    }
+/** page des croquis***/
+.oeuvre-croquis {
+    width: 20%;
+    padding: 15px;
+}
+    .oeuvre-croquis img {
+        width: 100%;
+    }
+    .oeuvre-croquis h2 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    /**adapter aus écran jusqu'à 1042px***/
+@media (max-width: 1042px) {
+    /**menu de navigation**/
+    header {
+        padding: 0 30px;
+    }
+        #logo {
+            width: 100px;
+        }
+    /**page acceuil : partie banner***/
+    #banner .arrow_left {
+        left: 30px;
+    }
+    #banner .arrow_right {
+        right: 30px;
+    }
+        /**partie présentation du site***/
+    .presentation-du-site {
+        padding: 0 20px;
+    }
+        /**partie création 2023***/
+    .creations {
+        margin: 50px 200px;
+    }
+        .oeuvre h2 {
+            font-size: 20px!important;
+        }
+    /**page des oeuvres : titre***/
+     #detail-oeuvre h1 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 25px;
+    }
+    #detail-oeuvre{
+        margin: 20px 15px;
+    }
+    /**page qui suis-je***/
+    #img-dianetta {
+        min-height: 0;
+    }
+    /** page des croquis***/
+    .oeuvre-croquis {
+        width: 30%;
+        padding: 15px;
+    }
+        .oeuvre-croquis h2 {
+            font-size: 16px;
+            font-weight: 600;
+        }
+}
+                /**adapter aus écran jusqu'à 770px***/
+@media (max-width: 770px) {
+     /**page acceuil : partie banner***/
+     #banner p {
+        font-size: 35px;
+    }
+        .dots {
+            bottom: 20px;
+        }
+    #banner .arrow_left {
+        left: 20px;
+        max-width: 40px;
+        }
+    #banner .arrow_right {
+        right: 20px;
+        max-width: 40px;
+    }
+    /**page accueil : partie création 2023***/
+    h1 {
+        margin: 40px 0;
+        font-size: 25px;
+    }
+        .presentation-du-site {
+            font-size: 16px;
+        }
+    .creations {
+        margin: 30px 200px;
+        font-size: 25px;
+    }
+    .oeuvre {
+        width: 30%;
+    }
+        .oeuvre h2 {
+                font-size: 16px!important;
+            }
+    #img-oeuvre {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    #img-oeuvre img {
+        width: 100%;
+    }
+
+    #contenu-oeuvre {
+        width: 100%;
+        margin: auto;
+    }
+    /**page accueil : partie footer 2023***/
+    footer div a {
+        font-size: 16px;
+    }
+    footer div .cta, #detail-presentation .cta {
+        padding: 10px 20px;
+    }
+    /**page des oeuvres***/
+    #img-oeuvre img {
+        width: 90%;
+    }
+}
+                /**adapter aus écran jusqu'à 603px***/
+@media (max-width: 603px) {
+    /**menu de navigation**/
+    header {
+        display: flex;
+        justify-content: space-around;
+    }
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+            nav a {
+                padding: 5px;
+            }
+    /**page accueil : partie création 2023***/
+    .oeuvre {
+            width: 45%;
+    }
+    /**page accueil : partie footer 2023***/
+    footer div {
+        flex-direction: column;
+    }
+     /** page des croquis***/
+     .h1-croquis{
+        max-width: 80%;
+        margin-left: 60px;
+        font-size: 20px;
+     }
+        .presentation-croquis {
+            margin-left: 10px;
+        }
+        .oeuvre-croquis {
+            width: 45%;
+            padding: 15px;
+        }
+            .oeuvre-croquis h2 {
+                font-size: 13px;
+            }
+}
+
+                /**adapter aus écran jusqu'à 500px***/
+@media (max-width: 500px) {
+    /**menu de navigation**/
+    header {
+        padding: 0;
+    }
+        #logo {
+            width: 80px;
+        }
+        nav a :hover{
+            font-size: 15px;
+        }
+     /**page acceuil : partie banner***/
+     #banner p {
+        font-size: 20px;
+    }
+        .dots {
+            bottom: 10px;
+        }
+        #banner .arrow_left {
+            left: 20px;
+            max-width: 20px;
+            }
+        #banner .arrow_right {
+            right: 20px;
+            max-width: 20px;
+        }
+    /**partie présentation du site***/
+    h1 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-size: 19px;
+    }
+    /**partie création 2023***/
+    .annee {
+        max-width: 100%;
+    }
+        .oeuvre h2, .oeuvre .description {
+            display: flex;
+            justify-content: center;
+        }
+        /**page accueil : partie création 2023***/
+    .oeuvre {
+            width: 90%;
+    }
+    /**page qui suis-je***/
+    #detail-presentation {
+        margin: 15px;
+        padding: 0 15px;
+    }
+    #contenu-dianetta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #img-dianetta {
+        margin-right: 0;
+    }
+        #img-dianetta img {
+            max-width: 200px;
+        }
+    .nom, .description-presentation {
+        font-size: 16px;
+        padding-left: 0;
+    }
+            /**page des oeuvres***/
+    #detail-oeuvre, #video-box{
+        margin: 20px 5px;
+    }
+    #img-oeuvre img {
+        width: 90%;
+    }
+    #detail-oeuvre h1, #video-box h1{
+        font-size: 23px;
+    }
+      
+}
+                /**adapter aus écran jusqu'à 450px***/
+@media (max-width: 450px) {
+    /** page des croquis***/
+    .h1-croquis{
+        font-size: 15px;
+     }
+     .presentation-croquis {
+        font-size: 14px;
+    }
+        .oeuvre-croquis h2 {
+            font-size: 14px;
+        }
+}
+
