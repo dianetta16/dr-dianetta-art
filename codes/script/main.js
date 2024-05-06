@@ -9,7 +9,7 @@ const slides = [
 	},
 	{
 		"image":"slide3.jpg",
-		"tagLine":"Peinture acrylique"
+		"tagLine":"Pouring"
 	},
 	{
 		"image":"slide4.jpg",
