@@ -184,6 +184,7 @@ main {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 100px;
 }
 .creations{
     color: #ab06b1    ;
@@ -354,6 +355,8 @@ footer {
     .oeuvre-croquis h2 {
         font-size: 18px;
         font-weight: 600;
+        text-align: center;
+        color : #0e0e7c;
     }
     /**adapter aus écran jusqu'à 1042px***/
 @media (max-width: 1042px) {
