@@ -11,7 +11,12 @@ font-size: 30px;
 }
 a {
     text-decoration: none;
-    color: inherit;
+    color: #0e0e7c;
+    font-weight: 700;
+}
+p{
+    color : #0e0e7c;
+    font-weight: 300;
 }
 /**header***/
 header {
@@ -38,7 +43,7 @@ header {
             nav a{
                 margin-left: 20px;
                 padding: 10px;
-                font-weight: 600;
+                font-weight: 700;
             }
             nav a:hover{
             color: #c4a208;
@@ -136,11 +141,13 @@ main {
         margin-bottom: 50px;
         justify-content: center;
         align-items: center;
+        color : #0e0e7c;
     }
     .presentation-du-site{
         margin-bottom: 50px;
         font-size: 20px;
         text-align: center;
+        color : #0e0e7c;
     }
     /**page des videos***/
 #video-box{
