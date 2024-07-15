@@ -518,6 +518,10 @@ footer {
 }
                 /**adapter aus écran jusqu'à 603px***/
 @media (max-width: 603px) {
+     /**banner***/
+     #banner p {
+        font-size: 25px;
+    }
     /**page accueil : partie création 2023***/
     .oeuvre {
             width: 45%;
