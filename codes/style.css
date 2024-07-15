@@ -41,7 +41,6 @@ header {
             margin: 0;
         }
             nav a{
-                margin-left: 20px;
                 padding: 10px;
                 font-weight: 700;
             }
@@ -403,7 +402,9 @@ footer {
     }
         /**partie création 2023***/
     .creations {
+        text-align: center;
         margin: 50px 200px;
+        width: 50%;
     }
         .oeuvre h2 {
             font-size: 20px!important;
@@ -437,6 +438,19 @@ footer {
         margin-left: 25%;
         margin-right: 25%;
     }
+        /**menu de navigation**/
+        header {
+            display: flex;
+            justify-content: space-between;
+        }
+            nav {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+                nav a {
+                    padding: 5px;
+                }
 }
                 /**adapter aus écran jusqu'à 770px***/
 @media (max-width: 770px) {
@@ -504,19 +518,6 @@ footer {
 }
                 /**adapter aus écran jusqu'à 603px***/
 @media (max-width: 603px) {
-    /**menu de navigation**/
-    header {
-        display: flex;
-        justify-content: space-around;
-    }
-        nav {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-            nav a {
-                padding: 5px;
-            }
     /**page accueil : partie création 2023***/
     .oeuvre {
             width: 45%;
