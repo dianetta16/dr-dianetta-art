@@ -585,12 +585,17 @@ footer {
         font-size: 19px;
     }
     /**partie création 2023***/
+    .creations{
+        margin: 30px 10px;
+        text-align: center;
+    }
     .annee {
         max-width: 100%;
     }
-        .oeuvre h2, .oeuvre .description {
+        .oeuvre h2, .oeuvre .description, .oeuvre h2, .oeuvre h3{
             display: flex;
             justify-content: center;
+            text-align: center;
         }
         /**page accueil : partie création 2023***/
     .oeuvre {
@@ -630,6 +635,13 @@ footer {
 }
                 /**adapter aus écran jusqu'à 450px***/
 @media (max-width: 450px) {
+    /** menu**/
+    header{
+        padding: 10px;
+    }
+        nav a {
+            text-align: center;
+        }
     /** page des croquis***/
     .h1-croquis{
         font-size: 15px;
