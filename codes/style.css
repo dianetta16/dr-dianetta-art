@@ -304,7 +304,12 @@ footer {
 			border-radius: 50px;
 			padding: 20px 30px;
 		}
-        .instagram-box img{
+        .instagram-box img, .etsy-box{
+            width: 30px;
+            height: 30px;
+        }
+        .etsy-box{
+            color: #c4a208;
             width: 30px;
             height: 30px;
         }
